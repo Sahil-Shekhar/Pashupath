@@ -1,4 +1,4 @@
-# YIL-PGK-155: Precision Guidance Kit Dependencies
+# Project Pashupath: Precision Guidance Kit Dependencies
 numpy>=1.24.0
 scipy>=1.10.0
 matplotlib>=3.7.0

@@ -1,11 +1,11 @@
-# YIL-PGK-155: Precision Guidance Kit for 155mm Artillery Shells
+# Project Pashupath: Precision Guidance Kit for 155mm Artillery Shells
 
 <p align="center">
-  <img src="cad/renders/pgk_cad_assembly_render.jpg" alt="Astra-PGK 155mm Assembly Render" width="750"/>
+  <img src="cad/renders/pgk_cad_assembly_render.jpg" alt="Project Pashupath 155mm Assembly Render" width="750"/>
 </p>
 
 <p align="center">
-  <strong>Transforming Standard Unguided 155mm Artillery Munitions into High-Precision Strike Weapons</strong>
+  <strong>Pashupath: Transforming Conventional 155mm Artillery into High-Precision Strike Munitions</strong>
 </p>
 
 <p align="center">
@@ -22,13 +22,13 @@
 
 Modern conventional artillery firing standard unguided 155mm high-explosive projectiles (such as the M107 or Indian HE-ERFB) exhibits severe ballistic dispersion at extended ranges. At a baseline range of **28 km**, typical dispersion yields a Circular Error Probable (**CEP**) of **~265 meters**, requiring an average expenditure of **50+ rounds** to neutralize a single fortified point target. Dedicated guided artillery shells (e.g., M982 Excalibur) solve this but cost upwards of **$70,000–$100,000+ USD** per round.
 
-**Astra-PGK-155** is an advanced, cost-effective course-correction fuze kit engineered to thread directly into standard NATO **2-inch 12-UN-2A** artillery fuze wells. Combining roll-isolated canard aerodynamics, multi-constellation GNSS / tactical-grade IMU sensor fusion via an Extended Kalman Filter (EKF), and Ballistic Impact Point Prediction (BIPP) guidance, Astra-PGK reduces impact dispersion to **10.2 meters CEP** at an estimated production cost of **~$1,480 per unit**—a **25.9x lethality improvement** at a fraction of the cost of dedicated guided rounds.
+**Project Pashupath** is an indigenous, cost-effective course-correction fuze kit engineered to thread directly into standard NATO **2-inch 12-UN-2A** artillery fuze wells. Combining roll-isolated canard aerodynamics, multi-constellation GNSS / tactical-grade IMU sensor fusion via an Extended Kalman Filter (EKF), and Ballistic Impact Point Prediction (BIPP) guidance, **Pashupath** reduces impact dispersion to **10.2 meters CEP** at an estimated production cost of **~$1,480 per unit**—a **25.9x lethality improvement** at a fraction of the cost of dedicated guided rounds.
 
 ---
 
 ## 🎯 Key Performance Specifications
 
-| Parameter | Operational Requirement (YIL) | Astra-PGK-155 Validated Metric | Standard / Verification Method |
+| Parameter | Operational Requirement (YIL) | Project Pashupath Validated Metric | Standard / Verification Method |
 |:---|:---:|:---:|:---|
 | **Circular Error Probable (CEP)** | $\le 30.0\text{ m}$ | **$10.2\text{ m}$** | 1,000-Run 6-DOF Monte Carlo |
 | **Max Launch Setback Shock** | $\ge 15,000\text{ g}$ | **$16,500\text{ g}$ Rated** | MIL-STD-810H (516.8), Method 516 |
@@ -45,13 +45,13 @@ Modern conventional artillery firing standard unguided 155mm high-explosive proj
 ## 🛠️ System Architecture
 
 <p align="center">
-  <img src="cad/renders/pgk_cad_exploded_view.jpg" alt="Astra-PGK Exploded Assembly View" width="750"/>
+  <img src="cad/renders/pgk_cad_exploded_view.jpg" alt="Pashupath Exploded Assembly View" width="750"/>
 </p>
 
-Astra-PGK-155 is partitioned into three tightly integrated functional domains:
+Project Pashupath is partitioned into three tightly integrated functional domains:
 
 ### 1. Aeromechanical & Roll-Decoupling Subsystem
-*   **Roll-Decoupled Bearing Assembly (RDBA):** Rifled artillery shells spin at $15,000+\text{ RPM}$ for gyroscopic stability. Astra-PGK decouples the forward control section from the spinning shell using a pair of preloaded **hybrid ceramic angular-contact bearings** with a dry MoS$_2$ lubricant. An internal roll-brake counter-spins the canard hub to $< 2\text{ rps}$, enabling steady aerodynamic control.
+*   **Roll-Decoupled Bearing Assembly (RDBA):** Rifled artillery shells spin at $15,000+\text{ RPM}$ for gyroscopic stability. Pashupath decouples the forward control section from the spinning shell using a pair of preloaded **hybrid ceramic angular-contact bearings** with a dry MoS$_2$ lubricant. An internal roll-brake counter-spins the canard hub to $< 2\text{ rps}$, enabling steady aerodynamic control.
 *   **Deployable Canards:** Four titanium (Ti-6Al-4V) canards with a **NACA 0009** symmetrical airfoil profile. Stowed flush inside the ogive during barrel transit and pyrotechnically deployed via spring-loaded torsion bars upon muzzle brake clearance.
 *   **Brushless DC Actuators (BLDC):** Two-axis independent actuation with zero-backlash harmonic drive gearboxes rated for $16,000\text{ g}$ axial loading.
 
@@ -90,7 +90,7 @@ A comprehensive 1,000-run 6-DOF Monte Carlo ballistic simulation was conducted t
 
 ### Statistical Results Summary
 
-| Metric | Unguided Ballistic Shell | Astra-PGK-155 Guided Shell | Improvement |
+| Metric | Unguided Ballistic Shell | Project Pashupath Guided Shell | Improvement |
 |:---|:---:|:---:|:---:|
 | **Mean Range Impact ($X$)** | $27,912.4\text{ m}$ | $28,001.2\text{ m}$ | Impact on Target |
 | **Mean Cross-Range Drift ($Y$)** | $+184.2\text{ m}$ (Magnus drift) | $+0.8\text{ m}$ | Magnus Drift Nullified |
@@ -104,7 +104,7 @@ A comprehensive 1,000-run 6-DOF Monte Carlo ballistic simulation was conducted t
 ## 📁 Repository Structure
 
 ```plaintext
-YIL-PGK-155/
+pashupath/
 ├── README.md                          # Comprehensive system dossier and quickstart
 ├── LICENSE                            # MIT License
 ├── requirements.txt                   # Python runtime dependencies
@@ -169,8 +169,8 @@ YIL-PGK-155/
 ### 1. Prerequisites
 Ensure you have **Python 3.10+** installed:
 ```bash
-git clone https://github.com/<your-username>/YIL-PGK-155.git
-cd YIL-PGK-155
+git clone https://github.com/<your-username>/pashupath.git
+cd pashupath
 pip install -r requirements.txt
 ```
 
@@ -207,9 +207,9 @@ Open any `.step` file located in `cad/models/` using FreeCAD, Autodesk Fusion 36
 
 ## 👥 Authors & Acknowledgments
 
-*   **Project:** YIL-PGK-155 Precision Guidance Kit
-*   **Initiative:** Smart India Hackathon (SIH) 2026 / Yantra India Limited (YIL)
-*   **Lead Engineering Team:** Team Astra
+*   **Project:** Project Pashupath (Precision Guidance Kit - 155mm)
+*   **Problem Statement:** Smart India Hackathon (SIH) 2026 / Yantra India Limited (YIL)
+*   **Engineering Lead:** Team Astra
 
 ---
 *Developed for research, simulation, and academic demonstration of low-cost precision munition guidance technologies.*
