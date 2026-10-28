@@ -169,7 +169,7 @@ Pashupath/
 ### 1. Prerequisites
 Ensure you have **Python 3.10+** installed:
 ```bash
-git clone https://github.com/<your-username>/Pashupath.git
+git clone https://github.com/Sahil-Shekhar/Pashupath.git
 cd Pashupath
 pip install -r requirements.txt
 ```
