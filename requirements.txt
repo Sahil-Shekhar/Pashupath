@@ -1,0 +1,7 @@
+# YIL-PGK-155: Precision Guidance Kit Dependencies
+numpy>=1.24.0
+scipy>=1.10.0
+matplotlib>=3.7.0
+plotly>=5.15.0
+python-pptx>=0.6.21
+markdown>=3.4.0

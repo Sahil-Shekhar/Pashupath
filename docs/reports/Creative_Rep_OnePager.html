@@ -1,0 +1,132 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body {
+                font-family: 'Segoe UI', Arial, sans-serif;
+                font-size: 11.5px;
+                line-height: 1.35;
+                color: #111;
+                margin: 0;
+                padding: 15px;
+            }
+            h1 {
+                font-size: 18px;
+                text-align: center;
+                text-transform: uppercase;
+                background-color: #2c3e50;
+                color: white;
+                padding: 8px;
+                margin-top: 0;
+                border-radius: 4px;
+            }
+            h3 {
+                font-size: 14px;
+                color: #d35400;
+                border-bottom: 1.5px solid #2980b9;
+                margin-top: 10px;
+                margin-bottom: 5px;
+                padding-bottom: 2px;
+                text-transform: uppercase;
+            }
+            ul {
+                margin-top: 3px;
+                margin-bottom: 8px;
+                padding-left: 20px;
+            }
+            li {
+                margin-bottom: 2px;
+            }
+            strong {
+                color: #2980b9;
+            }
+            code {
+                background-color: #f1c40f;
+                color: #000;
+                padding: 1px 4px;
+                border-radius: 2px;
+                font-weight: bold;
+            }
+            em {
+                color: #555;
+            }
+            @page {
+                margin: 10mm;
+                size: A4;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CREATIVE REP DATA SHEET: YIL 155mm PGK (SIH 2025)</h1>
+<p><strong>Designer Objective:</strong> Build a 6-slide deck using this exact data. Keep aesthetics aerospace-grade (dark themes, cyan/orange accents, blueprint elements).</p>
+<hr />
+<h3>SLIDE 1: TITLE &amp; HERO</h3>
+<ul>
+<li><strong>Title:</strong> Design &amp; Development of a Precision Guidance Kit (PGK) for 155 mm Artillery</li>
+<li><strong>Client / Category:</strong> Yantra India Limited (YIL) | Hardware | Defense &amp; Security</li>
+<li><strong>Tagline:</strong> <em>Transforming conventional artillery into surgical strike assets via &gt;15,000 g-hardened modular guidance (Sub-15m CEP).</em></li>
+<li><strong>Visual:</strong> Title block + Dark background with a faint wireframe of an artillery shell trajectory.</li>
+</ul>
+<h3>SLIDE 2: THE SOLUTION (ASTRA-PGK 155)</h3>
+<ul>
+<li><strong>Visual Needed:</strong> Large 3D Exploded Render (Use <code>PGK_cad_exploded_view.jpg</code>).</li>
+<li><strong>Callouts to point at the 3D Render:</strong><ul>
+<li><em>Canards:</em> 4× NACA-0010 Titanium, 80mm span, BLDC + Harmonic Drive (50:1).</li>
+<li><em>Bearing:</em> SKF 71905 ACE Rolling De-Spin Bearing (RDBA).</li>
+<li><em>Fuze Base:</em> Drop-in NATO 2-inch 12-UN-2A Thread.</li>
+<li><em>Nose:</em> 24GHz FMCW Radar &amp; Anti-jam GPS (NavIC) window.</li>
+</ul>
+</li>
+<li><strong>Highlight Badge:</strong> <code>[ VALIDATED CEP: 10.2 METERS ]</code></li>
+</ul>
+<h3>SLIDE 3: TECH ARCHITECTURE &amp; TRAJECTORY</h3>
+<ul>
+<li><strong>Visual Needed 1:</strong> Parabolic Trajectory Infographic showing these 5 nodes:<ol>
+<li><code>T+0.0s</code>: Muzzle Exit (827 m/s, 15,000 g shock).</li>
+<li><code>T+0.5s</code>: Setback &amp; Spin Arming (Battery Active).</li>
+<li><code>T+2.0s</code>: Canard Unlatch (90° Deploy).</li>
+<li><code>T+35s</code>: Apogee (8.6 km Alt) -&gt; GPS Lock.</li>
+<li><code>T+86s</code>: Impact/Airburst Detonation.</li>
+</ol>
+</li>
+<li><strong>Visual Needed 2:</strong> Tech Spec Table:<ul>
+<li><em>Compute:</em> STM32H743 MCU + Spartan-7 FPGA (&lt;0.5ms latency, 100Hz loop).</li>
+<li><em>Guidance Law:</em> 2D Ballistic Impact-Point Prediction (BIPP).</li>
+<li><em>Equation to display:</em> $a_{cmd} = 2 \cdot (Pos_{target} - Pos_{pred}) / t_{go}^2$</li>
+</ul>
+</li>
+</ul>
+<h3>SLIDE 4: FEASIBILITY &amp; RISKS (FMEA)</h3>
+<ul>
+<li><strong>Visual Needed:</strong> A sleek "Threat &amp; Mitigation" Dashboard Matrix.</li>
+<li><strong>Row 1 (Shock):</strong> &gt;15,000 g firing shock. <em>Fix:</em> Polyurethane potting + Titanium shear pins. (Severity: Critical 🔴)</li>
+<li><strong>Row 2 (Jamming):</strong> EW/GPS Spoofing. <em>Fix:</em> 16-State EKF + ADIS16460 IMU dead-reckoning fallback. (Severity: High 🟠)</li>
+<li><strong>Row 3 (Safety):</strong> Premature Detonation. <em>Fix:</em> Dual-environment unlock (Axial &gt;10k g + Spin &gt;150 Hz). (Severity: Critical 🔴)</li>
+</ul>
+<h3>SLIDE 5: IMPACT &amp; ATMANIRBHAR BHARAT</h3>
+<ul>
+<li><strong>Visual Needed 1 (Scatter Plot):</strong> "Dispersion Annihilation". Left side: Huge scatter cloud (Unguided CEP = 264.9 m). Right side: Tiny tight dot cluster (Guided CEP = 10.2 m).</li>
+<li><strong>Visual Needed 2 (Bar Chart/Stats):</strong><ul>
+<li><em>Rounds needed per target:</em> 50 (Unguided) vs. 2 (Guided).</li>
+<li><em>Unit Cost:</em> ₹2.13 Lakh (Astra-PGK) vs. ₹87 Lakh (US Excalibur).</li>
+</ul>
+</li>
+<li><strong>Highlight Badge:</strong> <code>[ 25.9× LETHALITY MULTIPLIER ]</code></li>
+</ul>
+<h3>SLIDE 6: STANDARDS &amp; VALIDATION</h3>
+<ul>
+<li><strong>Visual Needed:</strong> Grid of "Compliance Badges" and a screenshot of the Monte Carlo simulation data.</li>
+<li><strong>Badges to create:</strong><ul>
+<li><code>MIL-STD-1316</code> (Fuze Safety)</li>
+<li><code>MIL-STD-333B</code> (NATO 2-inch standard)</li>
+<li><code>MIL-STD-810H</code> (Shock &amp; Vibration)</li>
+<li><code>STANAG 4369</code> (Inductive Setting)</li>
+</ul>
+</li>
+<li><strong>Validation Data:</strong> 1,000-run 6-DOF Monte Carlo successfully completed. Parametric CAD fully modeled.</li>
+</ul>
+    </body>
+    </html>
+    
