@@ -209,7 +209,7 @@ Open any `.step` file located in `cad/models/` using FreeCAD, Autodesk Fusion 36
 
 *   **Project:** Project Pashupath (Precision Guidance Kit - 155mm)
 *   **Problem Statement:** Smart India Hackathon (SIH) 2026 / Yantra India Limited (YIL)
-*   **Engineering Lead:** Team Astra
+*   **Engineering Lead:** Team T-Veronica
 
 ---
 *Developed for research, simulation, and academic demonstration of low-cost precision munition guidance technologies.*
