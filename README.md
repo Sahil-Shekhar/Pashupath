@@ -104,7 +104,7 @@ A comprehensive 1,000-run 6-DOF Monte Carlo ballistic simulation was conducted t
 ## 📁 Repository Structure
 
 ```plaintext
-pashupath/
+Pashupath/
 ├── README.md                          # Comprehensive system dossier and quickstart
 ├── LICENSE                            # MIT License
 ├── requirements.txt                   # Python runtime dependencies
@@ -169,8 +169,8 @@ pashupath/
 ### 1. Prerequisites
 Ensure you have **Python 3.10+** installed:
 ```bash
-git clone https://github.com/<your-username>/pashupath.git
-cd pashupath
+git clone https://github.com/<your-username>/Pashupath.git
+cd Pashupath
 pip install -r requirements.txt
 ```
 
